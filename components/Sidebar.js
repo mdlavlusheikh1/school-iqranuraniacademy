@@ -26,7 +26,7 @@ export default function Sidebar() {
           <Link
             key={item.href}
             href={item.href}
-            className={\`block p-3 rounded ${isActive(item.href) ? 'bg-primary text-white' : 'hover:bg-gray-200'}\`}
+            className={'block p-3 rounded ' + (isActive(item.href) ? 'bg-primary text-white' : 'hover:bg-gray-200')}
           >
             <span className="mr-2">{item.icon}</span>
             {item.label}
